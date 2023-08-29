@@ -33,8 +33,8 @@ final class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor(redInt: 13, greenInt: 24, blueInt: 49)
-        
+        view.backgroundColor = UIColor(redInt: 25, greenInt: 35, blueInt: 45)
+
         borderButton.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
 
         cornerRadiusStepper.addTarget(self, action: #selector(stepperChanged(_:)), for: .valueChanged)
