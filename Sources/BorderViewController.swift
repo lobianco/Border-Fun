@@ -192,5 +192,5 @@ private enum Metrics {
     // this is just an initial guess. different iOS devices have different corner radii and the user will be able
     // to adjust this value with a stepper.
     //
-    static let defaultCornerRadius: CGFloat = 40
+    static let defaultCornerRadius: CGFloat = 56
 }
