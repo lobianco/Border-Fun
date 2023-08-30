@@ -139,8 +139,8 @@ final class BorderView: ForeverAnimatingView {
         let maskLayer = CAShapeLayer()
         maskLayer.fillColor = nil
         maskLayer.strokeColor = UIColor.black.cgColor
-        maskLayer.lineWidth = 12
-        
+        maskLayer.lineWidth = Metrics.borderWidth
+
         // comment out this line to get a better idea of the animation in action.
         layer.mask = maskLayer
     }
@@ -220,6 +220,9 @@ class ForeverAnimatingView: UIView {
 // MARK: - Metrics
 
 private enum Metrics {
+    // width of the border
+    static let borderWidth: CGFloat = 20
+
     // duration in seconds that it takes to cycle through the ordered colors once
     static let gradientAnimationDuration: Int = 5
     
